@@ -132,10 +132,10 @@ def calc_value(wind_speed, w_dir, sc, wave_height, wv_dir, per):
 ---------------------------------------------------------	
 '''
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
-__file__ = 'Data\Seavoyager Kozmino -Dickson_Recommended_2016-08-01-0930Z_2016-08-01-0930.csv'
+__file__ = 'Data/Seavoyager.csv'
 result = []
 def read():
-	with open (os.path.join( __location__ , __file__), 'rb') as f:
+	with open (os.path.join( __location__ , __file__), 'r') as f:
 		reader = csv.reader(f)
 		for row in reader:
 			value = []
@@ -151,7 +151,7 @@ read()
 pitch = []
 roll = []
 for elem in result:
-	print elem
+	print(elem)
 	pitch.append(elem[0])
 	roll.append(elem[1])
 

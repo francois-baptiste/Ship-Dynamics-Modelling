@@ -38,7 +38,7 @@ const_density = 1.025
 
 # Declaration of current and data file path within the module.
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
-__file__ = 'Data\Seavoyager Kozmino -Dickson_Recommended_2016-08-01-0930Z_2016-08-01-0930.csv'
+__file__ = 'Data/Seavoyager.csv'
 
 # Global Array varibales to store all the roll and pitch constants as a list.
 roll_constant = []
